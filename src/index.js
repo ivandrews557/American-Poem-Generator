@@ -18,7 +18,7 @@ function americanPoem(event) {
   let instructionsInput = document.querySelector("#user-instructions");
    let apiKey = "12fb5e8f183t409d043ba8bbea34o7b4";
   let prompt =`Generate an American poem about ${instructionsInput.value}`;
-  let context="You are a nature expert and love to write short poems about nature. Generate a short poem in basic HTML";
+  let context="You are a nature expert and love to write short poems with four lines about nature. Generate a short poem in basic HTML. Sign the end of the poem with 'SheCodes AI' in a <strong> element with a different color than the text.";
   let apiUrl=`https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(displayPoem);
