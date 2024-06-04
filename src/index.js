@@ -21,6 +21,10 @@ function americanPoem(event) {
   let context="You are a nature expert and love to write four lines of poem about nature. Generate a short poem in basic HTML. Sign the end of the poem with 'SheCodes AI' inside a <strong> element with a different color than the text.";
   let apiUrl=`https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `Generating an American poem about ${instructionsInput.value} 🌊🍃🌧️🌔`;
+
   axios.get(apiUrl).then(displayPoem);
 }
 
