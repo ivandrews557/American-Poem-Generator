@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>"
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI American Poem Generator</title>
 </head>
@@ -17,13 +18,12 @@
     
     <main>
         <form id="american-poem-form">
-            <input type="text" placeholder="Enter the topic of the American poem" autofocus required autocomplete="off"
-            class="instructions"/>
+            <input type="text" placeholder="American poems on nature..." autofocus required autocomplete="off"
+            class="instructions"
+            id="user-instructions"/>
             <input type="submit" class="submit-button"/>
         </form>
-        <div class="poem" id="poem">Emily Dickens</div>
-            <br />
-            poems about love
+        <div class="poem" id="poem"></div>
         </div>
     </main>
 
