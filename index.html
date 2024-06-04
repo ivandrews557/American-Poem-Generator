@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>"
     <link rel="stylesheet" href="src/style.css" />
     <title>AI American Poem Generator</title>
 </head>
@@ -15,13 +16,12 @@
     </header>
     
     <main>
-        <form>
+        <form id="american-poem-form">
             <input type="text" placeholder="Enter the topic of the American poem" autofocus required autocomplete="off"
             class="instructions"/>
             <input type="submit" class="submit-button"/>
         </form>
-        <div class="poem">
-            EMily DIckens
+        <div class="poem" id="poem">Emily Dickens</div>
             <br />
             poems about love
         </div>
